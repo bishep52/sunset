@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset | Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__content">
+          <div class="header__headline">
+            <a href="#!" class="header__logo logo">
+              <img class="logo__image" src="./icons/logo.svg" alt="Sunset" />
+            </a>
+            <nav class="header__menu hidden-mobile">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#!" class="header__menu-link active">Home</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#!" class="header__menu-link">About</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#!" class="header__menu-link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <button
+              class="header__burger-button burger-button visible-mobile"
+              type="button"
+              onclick="mobileOverlay.showModal()"
+              aria-label="Open navigation menu"
+            >
+              <span class="visually-hidden">Open navigation menu</span>
+            </button>
+          </div>
+          <div class="header__body">
+            <div class="header__information information">
+              <div class="information__content">
+                <h1 class="information__title">
+                  Your Perfect<br />
+                  Escape Awaits
+                </h1>
+                <h2 class="information__description">
+                  experience luxury and comfort
+                </h2>
+              </div>
+              <ul class="information__list">
+                <li class="information__list-item">
+                  <div class="information__list-content">
+                    <span class="information__list-icon"></span>
+                    <p class="information__list-description">
+                      Perfect for both leisure and business travelers.
+                    </p>
+                  </div>
+                </li>
+                <li class="information__list-item">
+                  <div class="information__list-content">
+                    <span class="information__list-icon"></span>
+                    <p class="information__list-description">
+                      Designed for ultimate comfort and relaxation.
+                    </p>
+                  </div>
+                </li>
+                <li class="information__list-item">
+                  <div class="information__list-content">
+                    <span class="information__list-icon"></span>
+                    <p class="information__list-description">
+                      24/7 concierge and room service.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <button class="information__button button">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="./images/header-bg.jpg" width="763" height="1009" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section hero">
+      <h2 class="visually-hidden">Sunset advantages</h2>
+      <article class="hero__card card">
+        <div class="card__left-image">
+          <img
+            class="card__left-image"
+            src="./images/section-bg-1.jpeg"
+            alt=""
+            width="622"
+            height="724"
+          />
+        </div>
+        <div class="card__advantages">
+          <ul class="card__list">
+            <li class="card__list-item">
+              <div class="card__list-content">
+                <span class="card__list-icon"></span>
+                <p class="card__list-description">
+                  At Sunset, we believe that every journey deserves a memorable
+                  destination.
+                </p>
+              </div>
+            </li>
+            <li class="card__list-item">
+              <div class="card__list-content">
+                <span class="card__list-icon"></span>
+                <p class="card__list-description">
+                  From our beautifully designed rooms and suites to our
+                  award-winning dining experiences.
+                </p>
+              </div>
+            </li>
+            <li class="card__list-item">
+              <div class="card__list-content">
+                <span class="card__list-icon"></span>
+                <p class="card__list-description">
+                  Every detail is crafted to exceed your expectations.
+                </p>
+              </div>
+            </li>
+            <li class="card__list-item">
+              <div class="card__list-content">
+                <span class="card__list-icon"></span>
+                <p class="card__list-description">
+                  Discover why Sunset is the preferred destination for
+                  discerning travelers. Book your stay today and let us take
+                  care of the rest.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <button class="card__button button">Order</button>
+        </div>
+        <div class="card__right-image">
+          <img
+            src="./images/section-bg-2.jpg"
+            alt=""
+            width="589"
+            height="724"
+          />
+        </div>
+      </article>
+    </section>
+
+    <section class="section contact">
+      <h2 class="visually-hidden">Contact with us</h2>
+      <article class="contact__wrapper">
+        <form class="contact__form form">
+          <h2 class="form__title">
+            Submit <br />
+            your application
+          </h2>
+          <div class="form__control">
+            <label class="visually-hidden" for="name">Type name</label>
+            <input
+              class="form__input"
+              type="text"
+              id="name"
+              placeholder="Jefe Bishep"
+              required
+              data-js-input-name
+            />
+          </div>
+          <div class="form__control">
+            <label class="visually-hidden" for="email">Type email</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              placeholder="example@yandex.ru"
+              required
+              data-js-input-email
+            />
+          </div>
+          <div class="form__control form__control-box">
+            <input
+              class="form__input-checkbox"
+              type="checkbox"
+              id="checkbox"
+              required
+              data-js-input-checkbox
+            />
+            <label class="form__label-checkbox" for="checkbox"
+              >I accept Privacy policy</label
+            >
+          </div>
+          <button class="form__button button">Submit form</button>
+        </form>
+        <img
+          class="contact__image"
+          src="./images/section-bg-3.jpg"
+          width="450"
+          height="635"
+          alt=""
+        />
+      </article>
+    </section>
+
+    <footer class="footer">
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#!" class="footer__menu-link active">Home</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#!" class="footer__menu-link">About</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#!" class="footer__menu-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__info">
+        <div class="footer__info-top">
+          <h2 class="footer__title">Sunset</h2>
+          <ul class="footer__soc1als-list">
+            <li class="footer__soc1als-item">
+              <a href="#!" class="footer__soc1als-link">
+                <img src="./icons/instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li class="footer__soc1als-item">
+              <a href="#!" class="footer__soc1als-link">
+                <img src="./icons/tiktok.svg" alt="tiktok" />
+              </a>
+            </li>
+            <li class="footer__soc1als-item">
+              <a href="#!" class="footer__soc1als-link">
+                <img src="./icons/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+            <li class="footer__soc1als-item">
+              <a href="#!" class="footer__soc1als-link">
+                <img src="./icons/facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="footer__soc1als-item">
+              <a href="#!" class="footer__soc1als-link">
+                <img src="./icons/telegram.svg" alt="telegram" />
+              </a>
+            </li>
+            <li class="footer__soc1als-item">
+              <a href="#!" class="footer__soc1als-link">
+                <img src="./icons/youtube.svg" alt="youtube" />
+              </a>
+            </li>
+          </ul>
+          <button class="footer__button button">order</button>
+        </div>
+        <div class="footer__info-bottom">
+          <p>&copy; 2024, Copyright.</p>
+          <a href="#!" class="footer__info-link">Privacy Policy</a>
+          <a href="#!" class="footer__info-link">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button
+          class="mobile-overlay__close-button cross-button"
+          type="submit"
+          aria-label="Close navigation menu"
+        >
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="#!">Home</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="#!">About</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="#!">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>
