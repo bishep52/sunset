@@ -477,8 +477,15 @@ body {
   margin-bottom: 45px;
 }
 
+.form__control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
 .form__control-box {
   display: flex;
+  flex-direction: row;
   align-items: center;
   column-gap: 16px;
 }
@@ -568,6 +575,7 @@ body {
   row-gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-inline: 30px;
 }
 
 .footer__button {
@@ -689,6 +697,17 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .footer__info-top {
+    align-items: center;
+  }
+
+  .footer__soc1als-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 480px) {
   .contact__form {
     padding-inline: 24px;
@@ -701,6 +720,16 @@ body {
 
   .form__button {
     white-space: nowrap;
+  }
+
+  .footer__info-top {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .footer__soc1als-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
